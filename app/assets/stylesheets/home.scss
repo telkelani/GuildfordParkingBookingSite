@@ -1,0 +1,30 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.whatToDo{
+  font-size: 200%;
+
+}
+button.btn {
+  background-color: rgb(0,0,0);
+  color:rgb(0,255,0);
+
+}
+.leftbutton{
+position: relative;
+top: 150px;
+display: inline-block;
+align-items:flex-start;
+}
+.rightbutton{
+  position:relative;
+  top: 150px;
+  left: 400px;
+  display:inline-block;
+  align-items: flex-end;
+
+}
+
+h1,p,form{
+  padding-left: 50px;
+}

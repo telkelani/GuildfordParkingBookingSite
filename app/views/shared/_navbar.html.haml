@@ -1,0 +1,21 @@
+%nav.navbar{:style=>"background-color:#00CDAC;"}
+  %ul.nav.navbar-nav
+    %li
+      %a{:href=>"/"}
+        %img{:src=>"https://media.glassdoor.com/sqll/1441029/guildford-borough-council-squarelogo-1519723186274.png",:width=>"50px",:height=>"50px",:style=>"position:relative;"}
+
+
+
+    %li
+      %a{:href=>"/",:alt=>"Home"}=t('home_nav')
+    %li
+      %a{:href=>"/contact"}=t('contact_nav')
+    %li.dropdown
+      %a.dropdown-toggle{:href=>"#","data-toggle"=>"dropdown"}
+        =t('locations_nav')
+        %span.caret
+      %ul.dropdown-menu
+        %li
+          -@location = Location.all
+          -@location.each do |l|
+            %a{:href=>"/locations/#{l.id}"}=l.name

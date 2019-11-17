@@ -1,0 +1,17 @@
+%h1=t('.title')
+%p=t('.contact_us')
+
+= form_tag submitted_contact_path, method: "post" do
+  =label_tag 'Name'
+  %br
+  =text_field_tag "name"
+  %br
+  =label_tag 'Email'
+  %br
+  =text_field_tag 'email'
+  %br
+  =label_tag 'Message'
+  %br
+  =text_area_tag 'message'
+  %br
+  =submit_tag "Submit Message"
