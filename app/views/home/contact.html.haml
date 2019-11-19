@@ -1,17 +1,33 @@
 %h1=t('.title')
 %p=t('.contact_us')
 
-= form_tag submitted_contact_path, method: "post" do
-  =label_tag 'Name'
+= form_tag submitted_contact_path, method: "post", name: "myForm", onsubmit:"return validateForm()" do
+  =label_tag t('.name')
   %br
   =text_field_tag "name"
   %br
-  =label_tag 'Email'
+  =label_tag t('.email')
   %br
-  =text_field_tag 'email'
+  =email_field_tag 'email'
   %br
-  =label_tag 'Message'
+  =label_tag t('.message')
   %br
   =text_area_tag 'message'
   %br
-  =submit_tag "Submit Message"
+  %br
+  %input.btn.btn-success{:type=>"submit",:name=>"submit",:value=>t('.submit_message')}
+
+:javascript
+  function validateForm(){
+  var name = document.forms["myForm"]["name"].value;
+  var email = document.forms["myForm"]["email"].value;
+  var message = document.forms["myForm"]["message"].value;
+  if (name == ""||email == ""||message==""){
+  alert("All fields are required");
+  history.go(0);
+  return false;
+  }
+  else {
+  return true;
+  }
+  }

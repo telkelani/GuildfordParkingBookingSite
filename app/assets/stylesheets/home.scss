@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .whatToDo{
   font-size: 200%;
+  position:relative;
+  left: 50px;
 
 }
 button.btn {
@@ -15,11 +17,12 @@ position: relative;
 top: 150px;
 display: inline-block;
 align-items:flex-start;
+left: 250px;
 }
 .rightbutton{
   position:relative;
   top: 150px;
-  left: 400px;
+  left: 450px;
   display:inline-block;
   align-items: flex-end;
 

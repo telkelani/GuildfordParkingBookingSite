@@ -1,14 +1,16 @@
 !!!
 %html
   %head
-    %title Park'n'Fly
+    %title Guildford Parking
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    -flash.each do |key,value|
-      =content_tag :div, content_tag(:p,value), id: "#{key}" unless value.blank?
+
     = render 'shared/navbar'
+    - flash.each do |key,msg|
+      %div{:class=>"alert alert-#{key}"}
+        = msg
 
     = yield

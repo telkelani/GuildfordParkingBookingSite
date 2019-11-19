@@ -40,8 +40,12 @@ en:
       instructions: Create an account or sign in to reserve a parking space
     contact:
       title: Contact Us
-      contact_us: plz
+      contact_us: If you want to keep in touch with us talk to us here (you DO NOT need an account to make a form)
       submitted: Message has been sent
+      name: Name
+      email: Email
+      message: Message
+      submit_message: Submit Message
     successmessage:
       success: message has been sent
       gohome: Back to Home
