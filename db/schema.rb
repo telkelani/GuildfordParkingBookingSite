@@ -10,7 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_24_145439) do
+ActiveRecord::Schema.define(version: 2019_11_24_161946) do
+
+  create_table "bays", force: :cascade do |t|
+    t.boolean "occupied"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "cars", force: :cascade do |t|
+    t.string "reg_no"
+    t.string "model"
+    t.string "brand"
+    t.datetime "year"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "locations", force: :cascade do |t|
     t.string "name"
@@ -19,6 +34,7 @@ ActiveRecord::Schema.define(version: 2019_11_24_145439) do
     t.integer "capacity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "bay_price"
   end
 
   create_table "users", force: :cascade do |t|

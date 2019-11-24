@@ -10,10 +10,9 @@
 
     = render 'shared/navbar'
     - if notice
-    %p.alert.alert-success= notice
+      %p.alert.alert-success= notice
     - if alert
-    %p.alert.alert-danger= alert
-    
+      %p.alert.alert-danger= alert
     - flash.each do |key,msg|
       %div{:class=>"alert alert-#{key}"}
         = msg
