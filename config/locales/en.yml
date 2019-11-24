@@ -38,6 +38,8 @@ en:
       guildfordpark: Welcome to Guildford Parking
       gparkdesc: Reserve a spot for your precious cars (or cars if you're a god damn baller) in one of our premium car parks
       instructions: Create an account or sign in to reserve a parking space
+      create_account: Create Account
+      sign_in: Sign In
     contact:
       title: Contact Us
       contact_us: If you want to keep in touch with us talk to us here (you DO NOT need an account to make a form)
@@ -46,6 +48,3 @@ en:
       email: Email
       message: Message
       submit_message: Submit Message
-    successmessage:
-      success: message has been sent
-      gohome: Back to Home

@@ -32,6 +32,8 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     {name:"Tarek", message:"Hello"}
 
     assert_response :redirect
+    assert_not_empty flash[:danger]
+
   end
 
 end

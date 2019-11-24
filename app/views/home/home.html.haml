@@ -5,5 +5,10 @@
     .whatToDo
       %h2=t('.instructions')
   .jumbotron{:style=>"background-color:#00CDAC;"}
-    %h1
-      %a{:href=>"/", :role=>"button"} Create Account
+    %ul{:style=>"list-style-type:none;"}
+      %li.homeMenu
+        %h1
+          %a{:href=>"/", :role=>"button"}=t('.create_account')
+      %li.homeMenu
+        %h1
+          %a{:href=>"/", :role=>"button"}=t('.sign_in')

@@ -7,8 +7,17 @@ class HomeController < ApplicationController
     name = params[:name]
     email = params[:email]
     message = params[:message]
-    flash[:success] = "Message has been sent"
-    redirect_to root_path
+    if (name.blank? || email.blank? || message.blank?)
+      flash[:danger] = "Form not submitted, all fields need to be filled"
+      redirect_to contact_path
+
+    else
+      flash[:success] = "Message has been sent"
+      redirect_to root_path
+    end
+
+
+
   end
 
 end
