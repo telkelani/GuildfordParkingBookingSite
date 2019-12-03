@@ -11,12 +11,6 @@
   %body
 
     = render 'shared/navbar'
-    - if notice
-      %p.alert.alert-success= notice
-    - if alert
-      %p.alert.alert-danger= alert
-    - flash.each do |key,msg|
-      %div{:class=>"alert alert-#{key}"}
-        = msg
+    = render 'shared/flashmessages'
 
     = yield

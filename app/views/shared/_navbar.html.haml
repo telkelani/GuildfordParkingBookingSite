@@ -19,3 +19,7 @@
           -@location = Location.all
           -@location.each do |l|
             %a{:href=>"/locations/#{l.id}"}=l.name
+
+    %li
+      - if user_signed_in?
+        =link_to('Logout', destroy_user_session_path, method: :delete)

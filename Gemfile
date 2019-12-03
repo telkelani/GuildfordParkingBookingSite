@@ -39,8 +39,8 @@ gem 'haml-rails', "~>2.0"
 gem 'jquery-rails'
 gem 'bootstrap-sass', "~>3.3.6"
 gem 'modernizr-rails'
-gem 'devise'
 gem 'gmaps4rails'
+gem 'devise'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
