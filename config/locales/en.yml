@@ -33,6 +33,7 @@ en:
   home_nav: Home
   contact_nav: Contact Us
   locations_nav: Locations
+  logout: Log Out
   home:
     home:
       guildfordpark: Welcome to Guildford Parking
@@ -50,4 +51,3 @@ en:
       submit_message: Submit Message
   locations:
     google_maps_api_key: AIzaSyC4rXpfSSGB-m65HjV31yWgwICMtKigV9k
-  
