@@ -2,6 +2,3 @@
   %p.alert.alert-success= notice
 - if alert
   %p.alert.alert-danger= alert
-- flash.each do |key,msg|
-  %div{:class=>"alert alert-#{key}"}
-    = msg

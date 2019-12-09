@@ -18,13 +18,6 @@ ActiveRecord::Schema.define(version: 2019_12_03_120007) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "cars", force: :cascade do |t|
-    t.string "reg_no"
-    t.string "model"
-    t.string "brand"
-    t.datetime "year"
-  end
-
   create_table "locations", force: :cascade do |t|
     t.string "name"
     t.decimal "latitude"

@@ -12,6 +12,7 @@ class HomeController < ApplicationController
       redirect_to contact_path
 
     else
+      ContactMailer.contact_email(name,email,message).deliver_now
       flash[:success] = "Message has been sent"
       redirect_to root_path
     end
